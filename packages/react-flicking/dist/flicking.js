@@ -4,7 +4,7 @@ name: @egjs/flicking
 license: MIT
 author: NAVER Corp.
 repository: https://github.com/naver/egjs-flicking
-version: 4.11.2-snapshot
+version: 4.11.2
 */
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@egjs/component'), require('@egjs/axes'), require('@egjs/imready')) :
@@ -2738,6 +2738,7 @@ version: 4.11.2-snapshot
           });
         });
       };
+
       __proto._getPosition = function (panel, direction) {
         if (direction === void 0) {
           direction = DIRECTION.NONE;
@@ -5056,6 +5057,7 @@ version: 4.11.2-snapshot
           });
         });
       };
+
       __proto._collectPanels = function () {
         var flicking = getFlickingAttached(this._flicking);
         var camera = flicking.camera;
@@ -7922,7 +7924,7 @@ version: 4.11.2-snapshot
        * Flicking.VERSION;  // ex) 4.0.0
        * ```
        */
-      Flicking.VERSION = "4.11.2-snapshot";
+      Flicking.VERSION = "4.11.2";
       return Flicking;
     }(Component);
 
