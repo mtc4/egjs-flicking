@@ -4,7 +4,7 @@ name: @egjs/react-flicking
 license: MIT
 author: NAVER Corp.
 repository: https://github.com/naver/egjs-flicking/tree/master/packages/react-flicking
-version: 4.11.2-snapshot
+version: 5.0.0
 */
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('react'), require('@egjs/component'), require('@egjs/list-differ'), require('@egjs/flicking'), require('react-dom')) :
@@ -26,7 +26,7 @@ version: 4.11.2-snapshot
     OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
     PERFORMANCE OF THIS SOFTWARE.
     ***************************************************************************** */
-    /* global Reflect, Promise, SuppressedError, Symbol */
+    /* global Reflect, Promise */
 
     var extendStatics = function (d, b) {
       extendStatics = Object.setPrototypeOf || {
@@ -195,10 +195,6 @@ version: 4.11.2-snapshot
       }
       return to.concat(ar || Array.prototype.slice.call(from));
     }
-    typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
-      var e = new Error(message);
-      return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
-    };
 
     var DEFAULT_PROPS = {
       viewportTag: "div",
