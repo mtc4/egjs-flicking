@@ -4331,7 +4331,10 @@ var Camera = /*#__PURE__*/function () {
     var renderer = flicking.renderer;
     if (renderer.rendering || !flicking.initialized) return this;
     var actualPosition = this._position - this._alignPos - this._offset + this._circularOffset;
-    el.style[this._transform] = flicking.horizontal ? "translate(" + (this._panelOrder === ORDER.RTL ? actualPosition : -actualPosition) + "px)" : "translate(0, " + -actualPosition + "px)";
+    var pxToEm = function (px) {
+      return px / 16;
+    };
+    el.style[this._transform] = flicking.horizontal ? "translate(" + (this._panelOrder === ORDER.RTL ? pxToEm(actualPosition) : pxToEm(-actualPosition)) + "em)" : "translate(0, " + -actualPosition + "px)";
     return this;
   };
   __proto._resetInternalValues = function () {
