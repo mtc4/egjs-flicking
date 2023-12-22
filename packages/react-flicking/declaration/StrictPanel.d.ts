@@ -6,7 +6,7 @@ declare class StrictPanel extends React.Component<{
     private _elRef;
     get nativeElement(): HTMLElement;
     get rendered(): boolean;
-    render(): JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
     show(): void;
     hide(): void;
     private _getElement;

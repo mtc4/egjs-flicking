@@ -24,7 +24,7 @@ declare class Flicking extends React.Component<Partial<FlickingProps & FlickingO
     shouldComponentUpdate(nextProps: Readonly<Partial<FlickingProps & FlickingOptions>>): boolean;
     beforeRender(): void;
     componentDidUpdate(): void;
-    render(): JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
     private _createPanelRefs;
     private _bindEvents;
     private _checkPlugins;
