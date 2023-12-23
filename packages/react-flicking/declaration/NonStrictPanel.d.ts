@@ -5,7 +5,7 @@ declare class NonStrictPanel extends React.Component<{
     private _hide;
     get nativeElement(): HTMLElement;
     get rendered(): boolean;
-    render(): import("react/jsx-runtime").JSX.Element | undefined;
+    render(): JSX.Element | undefined;
     show(): void;
     hide(): void;
 }

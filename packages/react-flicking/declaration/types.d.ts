@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import ReactFlicking from "./Flicking";
 import { SelectEvent, NeedPanelEvent, VisibleChangeEvent, HoldStartEvent, HoldEndEvent, MoveStartEvent, MoveEvent, MoveEndEvent, WillChangeEvent, ChangedEvent, WillRestoreEvent, RestoredEvent, ReadyEvent, BeforeResizeEvent, AfterResizeEvent, ReachEdgeEvent, PanelChangeEvent, Plugin, Status } from "@egjs/flicking";
 export interface FlickingProps {
