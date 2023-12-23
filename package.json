@@ -42,7 +42,7 @@
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "packages": "npm run packages:update && npm run packages:build && npm run packages:publish",
     "packages:update": "pvu --update=react-flicking,ngx-flicking/projects/ngx-flicking,vue-flicking,vue3-flicking,svelte-flicking",
-    "packages:build": "pvu --build=react-flicking,ngx-flicking,vue-flicking,vue3-flicking,svelte-flicking",
+    "packages:build": "pvu --build=react-flicking",
     "packages:publish": "pvu --publish=react-flicking,ngx-flicking/dist/ngx-flicking,vue-flicking,vue3-flicking,svelte-flicking"
   },
   "repository": {
